@@ -1,8 +1,11 @@
+jQuery(document).ready(function($) {
 var pageCounter = 1;
 var animalContainer = document.getElementById("animal-info");
 var btn = document.getElementById("btn");
 
-btn.addEventListener("click", function() {
+
+
+document.getElementById("btn").addEventListener("click", function(){
   var ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
   ourRequest.onload = function() {
@@ -56,3 +59,5 @@ function renderHTML(data) {
 
   animalContainer.insertAdjacentHTML('beforeend', htmlString);
 }
+
+});
