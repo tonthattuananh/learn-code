@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var object = {
+		'id':'1',
+		'name':'tuan anh',
+		'email':'tonthattuananh@gmail.com',
+		'address':'308 Nesthome'
+	};
+
+	var test = typeof(object);
+	
+	// Init Aray - C1
+	var info = new Array();
+	info[0] = 'Tuan Anh 1';
+	info[1] = 'Tuan Anh 2';
+	info[2] = 'Tuan Anh 3';
+	//console.log(info);
+
+	// Init Aray - C2
+	var data = new Array('PHP', 'CSS', 'JQuery');
+	// console.log(data[2]);
+
+	// Init Aray - C3
+	// var array = ['array 1', 'array 2', 'array 3'];
+	// for(i=0;i<array.length;i++) {
+	// 	console.log(array[i]);
+	// }
+
+	for(x in data) {
+		document.write(data[x]);
+	}
+
+</script>
+</body>
+</html>
